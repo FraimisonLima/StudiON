@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+* {
+    /* O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    /* serve para deixar uma do lado da outra (á lista) */
+    display: flex;
+    
+    /*removeu os ponto da lista não ordenada */
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    /*margi para direita 1ren = 16px 10/16= 0.625ren*/
+    margin-right: 0.625rem;
+}
+
+.navbar {
+    /* fixa no topo da barra */
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+
+    /*largura 100% do espaço disponivel ou 100vw*/
+    width: 100vw;
+    padding: 0 1rem;
+
+    /*cor de fundo*/
+    background-color: black;
+    /*cor da fonte*/
+    color: white;
+}
+
+.navbar__links {
+    /*propriedade de alianhamento para itens que esta dentro de grid (que vai fazer se alianhar a direita)*/
+    justify-self: end;
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+}
