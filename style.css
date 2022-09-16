@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Poppins:wght@300;600&display=swap');
 
 * {
     /* O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
@@ -6,27 +6,25 @@
 }
 
 :root {
+    --color-primary: #ffc500;
     font-family: 'Montserrat' sans-serif;
     font-size: 16px;
 }
 
 body {
     margin: 0;
+    padding-top: 7.75rem;
 }
 
 ul {
     /* serve para deixar uma do lado da outra (á lista) */
     display: flex;
-    
+
     /*removeu os ponto da lista não ordenada */
     list-style: none;
     padding-left: 0;
 }
 
-li {
-    /*margi para direita 1ren = 16px 10/16= 0.625ren*/
-    margin-right: 0.625rem;
-}
 
 .navbar {
     /* fixa no topo da barra */
@@ -40,6 +38,7 @@ li {
 
     /*largura 100% do espaço disponivel ou 100vw*/
     width: 100vw;
+    height: 7.75rem;
     padding: 0 1rem;
 
     /*cor de fundo*/
@@ -53,7 +52,44 @@ li {
     justify-self: end;
 }
 
+.navbar__links li {
+    font-size: .875rem;
+
+    /*margi para direita 1ren = 16px 10/16= 0.625ren*/
+    margin-right: 3rem;
+
+    text-transform: uppercase;
+}
+
+
 .navbar__links a {
+    font-weight: 300;
     color: white;
+
+    /*ilimina a barra debaixo dos links*/
     text-decoration: none;
 }
+
+/*Quando passa o mouse em cima */
+.navbar__links a:hover {
+    color: var(--color-primary)
+}
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch; /*relativo ao tamanho da altura do glifo 0 da fonte */
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.logo-studion__subtitle{
+    font-size: .875rem;
+    font-weight: 300;
+    float: right;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
