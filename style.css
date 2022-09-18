@@ -6,9 +6,10 @@
 }
 
 :root {
-    --color-primary: #ffc500;
     font-family: 'Montserrat' sans-serif;
     font-size: 16px;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
 }
 
 body {
@@ -29,6 +30,7 @@ ul {
 .navbar {
     /* fixa no topo da barra */
     position: fixed;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
@@ -53,7 +55,7 @@ ul {
 }
 
 .navbar__links li {
-    font-size: .875rem;
+    font-size: 0.875rem;
 
     /*margi para direita 1ren = 16px 10/16= 0.625ren*/
     margin-right: 3rem;
@@ -78,18 +80,79 @@ ul {
 .logo-studion {
     font-size: 2.375rem;
     font-weight: 900;
-    line-height: 1ch; /*relativo ao tamanho da altura do glifo 0 da fonte */
+    line-height: 1ch;
+    /*relativo ao tamanho da altura do glifo 0 da fonte */
     text-transform: uppercase;
     text-align: right;
 }
 
-.logo-studion__subtitle{
-    font-size: .875rem;
+.logo-studion__subtitle {
+    font-size: 0.875rem;
     font-weight: 300;
-    float: right;
 }
 
 .copy--primary {
     color: var(--color-primary);
 }
 
+#slider {
+    background-color: #000;
+    color: #fff;
+}
+
+.slider {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slider__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider__copy {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h6 {
+    margin: 0;
+}
