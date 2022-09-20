@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Poppins:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
 
 * {
     /* O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
@@ -6,7 +6,7 @@
 }
 
 :root {
-    font-family: 'Montserrat' sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     --color-primary: #ffc500;
     --default-padding: 1rem;
@@ -116,6 +116,23 @@ ul {
     position: absolute;
     top: 0;
     left: 50vw;
+}
+
+.slider__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+}
+
+.slider__copy h2 {
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slider__copy h2 span {
+    display: block;
 }
 
 
