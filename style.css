@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+
 * {
     /* O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
     box-sizing: border-box;
@@ -21,7 +22,12 @@ body {
 header,
 main,
 footer {
-    overflow-x: hidden;
+   overflow: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto ;
 }
 
 ul {
@@ -38,11 +44,16 @@ ul {
     /* fixa no topo da barra */
     position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    
+}
+
+.navbar__container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left: 0;
+   
 
 
     /*largura 100% do espaço disponivel ou 100vw*/
@@ -214,7 +225,7 @@ ul {
 }
 
 .institutional p {
-    font-family: 'roboto' sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.0625rem ;
     line-height: 1.6875rem;
     margin-bottom: 0;
@@ -224,8 +235,6 @@ ul {
 .btn--institutional:hover  {
     color: var(--color-copy);
     background: unset;
-  
-    
 }
 
 
@@ -257,7 +266,3 @@ ul {
 
 
 
-
-h6 {
-    margin: 0;
-}
