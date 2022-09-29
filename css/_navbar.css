@@ -1,0 +1,59 @@
+
+.navbar {
+    /* fixa no topo da barra */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar__container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+
+    /*largura 100% do espaço disponivel ou 100vw*/
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+
+    /*cor de fundo*/
+    background-color: black;
+    /*cor da fonte*/
+    color: white;
+}
+
+.navbar__links {
+    /*propriedade de alianhamento para itens que esta dentro de grid (que vai fazer se alianhar a direita)*/
+    justify-self: end;
+}
+
+.navbar__links li {
+    font-size: 0.875rem;
+
+    /*margi para direita 1ren = 16px 10/16= 0.625ren*/
+    margin-right: 3rem;
+
+    text-transform: uppercase;
+}
+
+
+.navbar__links a {
+    font-weight: 300;
+    color: white;
+
+    /*ilimina a barra debaixo dos links*/
+    text-decoration: none;
+}
+
+.navbar__links a.active {
+    color: var(--color-primary);
+}
+
+/*Quando passa o mouse em cima */
+.navbar__links a:hover {
+    color: var(--color-primary)
+}
