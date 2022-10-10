@@ -1,0 +1,48 @@
+.galeria {
+    position: relative;
+    height: 34.625rem;
+}
+
+.galeria__background {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.galeria__copy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    padding: 7rem 1.875rem;
+}
+
+
+
+.galeria__copy h3 {
+    color: var(--color-primary);
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.galeria__copy h2 {
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 5.25rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.3125rem;
+    color: var(--color-primary);
+}
+
+.galeria__copy p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+    color: var(--color-copy--alt);
+}
+
+.galeria__main {
+    background: #000000
+}

@@ -71,15 +71,14 @@
     margin: 0;
 }
 
-.depoimentos__lorem p {
-    margin: 0;
-    width: 36.8125rem;
+.depoimentos__lorem {
+    margin: auto;
+    width: 44rem;
     height: 10.8875rem;
-    font-size: 1rem;
+    width: 36.8125rem;
     line-height: 1.875rem;
     color: #000000;
     font-weight: 400;
-   width: auto;
-    display: block;
-
 }
+
+
